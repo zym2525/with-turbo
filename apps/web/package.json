@@ -11,17 +11,34 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
-    "@repo/math": "workspace:^",
     "@repo/ui": "workspace:*",
+    "@tanstack/vue-query": "^5.75.7",
+    "@vueuse/core": "^13.1.0",
+    "ali-oss": "^6.22.0",
+    "axios": "^1.9.0",
+    "dayjs": "^1.11.13",
     "element-plus": "^2.9.8",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "lodash": "^4.17.21",
+    "lottie-web": "^5.12.2",
+    "nprogress": "^0.2.0",
+    "path-browserify": "^1.0.1",
+    "path-to-regexp": "^8.2.0",
     "pinia": "^3.0.2",
+    "senin-help": "^1.0.5",
+    "senin-vue": "^1.0.4",
+    "sortablejs": "1.15.0",
     "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "vue-component-type-helpers": "^2.2.10",
+    "vue-router": "^4.5.0",
+    "xlsx": "0.18.5",
+    "xlsx-style": "0.8.13"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "eslint": "^8.57.0",
+    "eslint": "^9.26.0",
     "typescript": "5.5.4",
     "vite": "^5.1.4"
   }

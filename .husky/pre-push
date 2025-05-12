@@ -1,0 +1,18 @@
+#!/bin/sh
+
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+main_branch="master"
+
+if [ "$current_branch" = "$main_branch" ]; then
+  echo "当前已在主分支，请确保代码已更新并准备提交。"
+else
+  git fetch origin "$main_branch"
+
+  if ! git merge-base --is-ancestor origin/"$main_branch" HEAD; then
+    echo "您的分支落后于远程主分支，请先拉取并合并最新的主分支代码。"
+    exit 1
+  fi
+fi
+
+exit 0

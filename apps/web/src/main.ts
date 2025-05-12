@@ -3,7 +3,6 @@ import "./style.css";
 import typescriptLogo from "/typescript.svg";
 import { Counter } from "@repo/ui/counter";
 import { setupCounter } from "@repo/ui/setup-counter";
-import {add} from '@repo/math/add';
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
@@ -17,8 +16,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <div class="card">
       ${Counter()}
     </div>
-    <div>${add(1, 2)}</div>
-    <div>${add(1, 2)}</div>
   </div>
 `;
 
