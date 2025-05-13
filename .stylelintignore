@@ -1,0 +1,11 @@
+/dist/*
+**/dist/*
+/public/*
+public/*
+/node_modules/**
+
+assets/iconfont/*
+
+# src/style/theme.scss
+
+src/TUIKit/**/*
