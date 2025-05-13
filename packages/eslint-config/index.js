@@ -1,8 +1,8 @@
-const js = require("@eslint/js")
-const tseslint = require("typescript-eslint")
-const configPrettier = require("eslint-config-prettier")
-const pluginPrettier = require("eslint-plugin-prettier")
-const { defineConfig } = require("eslint/config")
+const js = require('@eslint/js');
+const tseslint = require('typescript-eslint');
+const configPrettier = require('eslint-config-prettier');
+const pluginPrettier = require('eslint-plugin-prettier');
+const { defineConfig } = require('eslint/config');
 
 module.exports = defineConfig([
   {
@@ -42,17 +42,17 @@ module.exports = defineConfig([
     rules: {
       ...configPrettier.rules,
       ...pluginPrettier.configs.recommended.rules,
-      "no-debugger": "off",
-      "no-unused-vars": [
-        "warn",
+      'no-debugger': 'off',
+      'no-unused-vars': [
+        'warn',
         {
-          argsIgnorePattern: "^_",
-          varsIgnorePattern: "^_",
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
         },
       ],
-      "max-lines": ["error", 700], //限制行数 请勿修改 请优化你的代码
-      "prettier/prettier": [
-        "error",
+      'max-lines': ['error', 700], //限制行数 请勿修改 请优化你的代码
+      'prettier/prettier': [
+        'error',
         {
           // 一行最多 100 字符
           printWidth: 100,
@@ -95,48 +95,45 @@ module.exports = defineConfig([
   },
   ...tseslint.config({
     extends: [...tseslint.configs.recommended],
-    files: ["**/*.?([cm])ts", "**/*.?([cm])tsx"],
+    files: ['**/*.?([cm])ts', '**/*.?([cm])tsx'],
     rules: {
-      "@typescript-eslint/no-redeclare": "error",
-      "@typescript-eslint/ban-ts-comment": "off",
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/prefer-as-const": "warn",
-      "@typescript-eslint/no-empty-function": "off",
-      "@typescript-eslint/no-non-null-assertion": "off",
-      "@typescript-eslint/no-unused-expressions": "off",
-      "@typescript-eslint/no-unsafe-function-type": "off",
-      "@typescript-eslint/no-import-type-side-effects": "error",
-      "@typescript-eslint/explicit-module-boundary-types": "off",
-      "@typescript-eslint/consistent-type-imports": [
-        "error",
-        { disallowTypeAnnotations: false, fixStyle: "inline-type-imports" },
+      '@typescript-eslint/no-redeclare': 'error',
+      '@typescript-eslint/ban-ts-comment': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/prefer-as-const': 'warn',
+      '@typescript-eslint/no-empty-function': 'off',
+      '@typescript-eslint/no-non-null-assertion': 'off',
+      '@typescript-eslint/no-unused-expressions': 'off',
+      '@typescript-eslint/no-unsafe-function-type': 'off',
+      '@typescript-eslint/no-import-type-side-effects': 'error',
+      '@typescript-eslint/explicit-module-boundary-types': 'off',
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        { disallowTypeAnnotations: false, fixStyle: 'inline-type-imports' },
       ],
-      "@typescript-eslint/prefer-literal-enum-member": [
-        "error",
-        { allowBitwiseExpressions: true },
-      ],
-      "@typescript-eslint/no-unused-vars": [
-        "warn",
+      '@typescript-eslint/prefer-literal-enum-member': ['error', { allowBitwiseExpressions: true }],
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
         {
-          argsIgnorePattern: "^_",
-          varsIgnorePattern: "^_",
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
         },
       ],
     },
   }),
   {
-    files: ["**/*.d.ts"],
+    files: ['**/*.d.ts'],
     rules: {
-      "eslint-comments/no-unlimited-disable": "off",
-      "import/no-duplicates": "off",
-      "no-restricted-syntax": "off",
-      "unused-imports/no-unused-vars": "off",
+      'eslint-comments/no-unlimited-disable': 'off',
+      'import/no-duplicates': 'off',
+      'no-restricted-syntax': 'off',
+      'unused-imports/no-unused-vars': 'off',
     },
   },
   {
-    files: ["**/*.?([cm])js"],
+    files: ['**/*.?([cm])js'],
     rules: {
-      "@typescript-eslint/no-require-imports": "off",
+      '@typescript-eslint/no-require-imports': 'off',
     },
   },
-])
+]);
