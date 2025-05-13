@@ -5,13 +5,15 @@
     "dev": "turbo run dev",
     "prepare": "husky install",
     "lint": "turbo run lint",
-    "lint:lint-staged": "echo 更新版本成功",
+    "lint:eslint": "turbo run lint:eslint",
+    "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.cjs",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@commitlint/types": "^19.8.1",
+    "@repo/eslint-config": "workspace:^",
     "@types/node": "^22.15.17",
     "eslint": "^9.26.0",
     "husky": "^9.1.7",

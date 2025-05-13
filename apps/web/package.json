@@ -7,7 +7,8 @@
     "dev": "vite --clearScreen false",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint \"src/**/*.ts\""
+    "lint": "eslint \"src/**/*.{ts,tsx,vue,js}\"",
+    "lint:eslint": "eslint \"{src,mock,build}/**/*.{vue,js,ts,tsx}\" --fix"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
