@@ -1,0 +1,5 @@
+@use 'sass:math';
+
+@function loginPx2Rem($px) {
+  @return #{math.div($px * 0.9, 100)}rem;
+}

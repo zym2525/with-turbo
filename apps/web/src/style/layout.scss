@@ -1,0 +1,41 @@
+@use './common.scss' as *;
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.app-container > .pagination-wrapper {
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 40px);
+}
+
+#app .hasTagsView .fixed-header + .app-main {
+  height: 100vh;
+}
+
+.pretty-layout-siderbar-wrapper .pretty-layout-title {
+  padding-left: 28px;
+}
+
+.pretty-layout-sub-menu-view {
+  --pretty-layout-sub-menu-view-base-level-padding: 19px;
+}
+
+body {
+  .pro-table-wrapper {
+    padding: 0;
+  }
+}
+
+.pro-from-item-read-content-wrapper {
+  .read-image-wrapper {
+    margin-bottom: 0;
+  }
+
+  .check-upload-list {
+    width: 100%;
+  }
+}

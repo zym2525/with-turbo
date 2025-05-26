@@ -14,7 +14,12 @@ type Props = {
 const props = withDefaults(defineProps<Props>(), {});
 </script>
 
-<!-- <style lang="scss" scoped>
+<style lang="scss" scoped>
 @use '@/style/common.scss' as *;
 
-</style> -->
+.aa {
+  margin: 20px;
+  width: 200px;
+  height: 300px;
+}
+</style>

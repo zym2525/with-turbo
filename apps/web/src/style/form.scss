@@ -1,0 +1,40 @@
+@use './common.scss' as *;
+
+.form-input-separator {
+  display: inline-block;
+  margin: 0 10px;
+  color: getCssVar('text-color', 'primary');
+}
+
+.form-input-prefix {
+  display: inline-block;
+  margin-right: 10px;
+  color: getCssVar('text-color', 'primary');
+}
+
+.form-input-unit {
+  margin-left: 10px;
+  color: getCssVar('text-color', 'primary');
+}
+
+.form-item-button {
+  margin-left: 16px;
+
+  .el-icon {
+    margin-left: 6px;
+  }
+
+  &.danger {
+    color: getCssVar('color', 'danger');
+
+    &:not(.is-disabled):hover,
+    &:not(.is-disabled):focus {
+      color: getCssVar('color', 'danger', 'light-3');
+    }
+  }
+}
+
+.page-form-layout-sub-title {
+  margin-left: 16px;
+  font-size: 16px;
+}

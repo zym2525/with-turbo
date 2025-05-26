@@ -23,9 +23,6 @@ export default {
     'prettier/prettier': true,
     'no-descending-specificity': null,
     'function-url-quotes': 'always',
-    'string-quotes': ['single', { avoidEscape: false }],
-    'unit-case': null,
-    'color-hex-case': 'lower',
     'color-hex-length': 'long',
     'rule-empty-line-before': [
       'always',
@@ -34,11 +31,9 @@ export default {
       },
     ],
     'font-family-no-missing-generic-family-keyword': null,
-    'block-opening-brace-space-before': 'always',
     'property-no-unknown': null,
     'no-empty-source': null,
     'selector-class-pattern': null,
-    'value-list-comma-newline-after': 'never-multi-line',
     'selector-pseudo-class-no-unknown': [
       true,
       {
@@ -61,6 +56,7 @@ export default {
       },
     ],
     'function-name-case': null,
+    'scss/at-function-pattern': null,
     'annotation-no-unknown': [
       true,
       {

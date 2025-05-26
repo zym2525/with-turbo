@@ -1,0 +1,10 @@
+/* stylelint-disable */
+@use '../var.scss' as *;
+
+@forward '@bole-core/components/src/styles/var.scss' with (
+  $bole-pro-table: (
+    'filter-list-margin': 10px,
+  )
+);
+
+@use '@bole-core/components/src/styles/index.scss' as *;

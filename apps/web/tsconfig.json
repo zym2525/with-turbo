@@ -1,7 +1,23 @@
 {
   "extends": "@repo/typescript-config/vite.json",
-  "include": ["src"],
   "compilerOptions": {
-    "sourceMap": false
-  }
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@build/*": ["build/*"],
+      "@config/*": ["config/*"],
+      "@mock/*": ["mock/*"]
+    },
+    "types": ["node", "vite/client", "vite-svg-loader", "element-plus/global"]
+  },
+  "include": [
+    "src",
+    "build/**/*.ts",
+    "types/**/*.d.ts",
+    "vite.config.ts",
+    "auto-imports.d.ts",
+    "components.d.ts",
+    "lib/vuedraggable/dist/vuedraggable.umd.js"
+  ],
+  "exclude": ["node_modules", "dist"]
 }

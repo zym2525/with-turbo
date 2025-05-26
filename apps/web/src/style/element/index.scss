@@ -1,0 +1,26 @@
+/* stylelint-disable */
+@use 'sass:map';
+@use '../var.scss' as *;
+
+// @forward 'element-plus/theme-chalk/src/mixins/config.scss' with (
+//   $namespace: 'ep'
+// );
+
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': map.get($bole-colors, 'primary', 'base'),
+    ),
+  ),
+  $text-color: (
+    'primary': map.get($bole-text-color, 'primary'),
+    'regular': map.get($bole-text-color, 'regular'),
+    'secondary': map.get($bole-text-color, 'secondary'),
+  )
+);
+
+// @forward 'element-plus/theme-chalk/src/switch' with (
+
+// )
+
+@use 'element-plus/theme-chalk/src/index.scss' as *;

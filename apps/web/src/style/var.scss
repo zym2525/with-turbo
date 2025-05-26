@@ -1,0 +1,40 @@
+@use 'sass:map';
+
+$bole-colors: (
+  'white': #ffffff,
+  'black': #000000,
+  'primary': (
+    'base': #2878ff,
+    // #409eff,
+  ),
+  'success': (
+    'base': #67c23a,
+  ),
+  'warning': (
+    'base': #e6a23c,
+  ),
+  'danger': (
+    'base': #f56c6c,
+  ),
+  'error': (
+    'base': #f56c6c,
+  ),
+  'info': (
+    'base': #909399,
+  ),
+);
+
+$bole-text-color: (
+  'primary': #333333,
+  'regular': #666666,
+  'secondary': #999999,
+  'placeholder': #a8abb2,
+  'disabled': #c0c4cc,
+);
+
+// app-container padding
+$bole-container-padding: 10px;
+
+$bole-query-bar: (
+  'group-item-margin': 12px,
+);
