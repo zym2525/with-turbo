@@ -2,7 +2,7 @@
 
 current_branch=$(git rev-parse --abbrev-ref HEAD)
 
-main_branch="master"
+main_branch="main"
 
 if [ "$current_branch" = "$main_branch" ]; then
   echo "当前已在主分支，请确保代码已更新并准备提交。"
